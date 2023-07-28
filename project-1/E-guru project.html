@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        body{
+            background:linear-gradient(to right,rgb(212, 212, 212),white) ;
+        }
+        .menu-icon{
+            display: none;
+        }
+        .user-icon{
+            display: none;
+        }
+        .nav-item{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            
+        }
+        .left-item{
+            display: flex;
+            align-items: center;
+
+        }
+        .left-item img{
+          height: 40px;
+          width: 40px;
+            
+        }
+
+        
+        .middle-item>ul>li{
+            display: inline;
+          margin-left: 50px;
+          font-size: smaller;
+        }
+        .middle-item>ul>li:hover{
+     color: rgb(240, 54, 41);
+        }
+        .right-item button{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color: rgb(255, 255, 255);
+        }
+        .m-main-sec{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 500px;
+        }
+        .m-main-left{
+            margin-top: 50px;
+            margin-bottom: 50px;
+            margin-left: 160px;
+        }
+        .m-left-head{
+            font-size: larger;
+
+        }
+        .m-left-para{
+            font-size: medium;
+            border-left: 1px solid black;
+            padding-left: 10px;
+        }
+  
+      .image1{
+        height: 400px;
+        position: absolute;
+        left: 700px;
+        top: 150px;
+        z-index: 1;
+      }
+      .image2{
+        height: 400px;
+        position: absolute;
+       right: 100px;
+       top: 120px;
+        z-index: 2;
+      }
+      .image3{
+        position: absolute;
+       right: 170px;
+       height: 400px;
+        z-index: 3;
+        top: 130px;
+      }
+      .image4{
+        position: absolute;
+right:550px ;
+top: 120px;
+      }
+      .image5{
+        position: absolute;
+  right: 600px;
+  top: 370px;
+      }
+
+      .image6{
+        position: absolute;
+        right: 500px;
+  top: 530px;
+      }
+      .image7{
+        position: absolute;
+        top: 480px;
+        right: 80px;
+      }
+.button1{
+    padding-top: 11px;
+            padding-bottom: 11px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-style: none;
+            background-color: rgb(240, 120, 22);
+            color: white;
+      
+}
+.button2{
+    padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-left: 20px;
+}
+.footer-sec{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 200px;
+    background-color: rgb(34, 25, 75);
+}
+.footer1 h1{
+    color: white;
+    font-size:28px;
+}
+.footer1 p{
+    color: rgb(153, 152, 152);
+    font-size: 15px;
+}
+
+
+.footer2 h1{
+    color: white;
+    font-size: large;
+}
+.footer2 img{
+    background-color: aqua;
+    
+    border-radius: 10px;
+   padding: 5px;
+}
+.footer3 img{
+    background-color: rgb(248, 66, 11);
+    
+    border-radius: 10px;
+   padding: 5px 7px;
+}
+.footer4 img{
+    background-color: rgb(0, 38, 255);
+    
+    border-radius: 10px;
+   padding: 5px;
+}
+.footer2 p{
+    color: rgb(153, 152, 152);
+    font-size: small;
+}
+
+.footer3 h1{
+    color: white;
+    font-size: large;
+}
+.footer3 p{
+    color: rgb(153, 152, 152);
+    font-size: small;
+}
+
+
+.footer4 h1{
+    color: white;
+    font-size: large;
+}
+.footer4 p{
+    color: rgb(153, 152, 152);
+    font-size: small;
+}
+
+
+        @media screen and (max-width: 500px){
+            *{
+                box-sizing: border-box;
+                margin: 0px;
+             
+               
+            }
+            .left-item img{
+                height: 30px;
+            }
+            .left-item h1{
+                font-size: 20px;
+            }
+           
+           
+            .menu-icon{
+            display: block;
+
+        }
+        .user-icon{
+            display: block;
+            margin-right: 100px;
+        }
+        .middle-item{
+            display: none;
+        }
+        .right-item button{
+            display: none;
+        }
+        .m-main-sec{
+       
+            display: flex;
+            flex-direction: column;
+             
+            align-items: center;
+            height: 500px;
+            margin-left: 50px;
+            
+        }
+        .m-left-head{
+            font-size: 14px;
+            
+           
+        }
+        .m-main-left{
+            margin-left: -20px;
+
+
+        }
+        .m-left-para{
+            margin-top: 20px;
+            font-size: small;
+        }
+        .m-main-button{
+            display: flex;
+            margin-top: 520px;
+            margin-right: 100px;
+         
+
+      
+        }
+
+        .image1{
+           height: 300px;
+        position: absolute;
+        top: 350px;
+        left: 50px;
+          
+        }
+        .image2{
+           height: 300px;
+           position: absolute;
+           top: 330px;
+              
+           }
+          
+           .image3{
+           height: 300px;
+           position: absolute;
+           top: 340px;
+             
+           }
+           .image4{
+           height: 30px;
+           position: absolute;
+           top: 280px;
+           left:90px ;    
+           }
+           .image5{
+            height: 60px;
+           
+           position: absolute;
+           top: 800px;
+           left:300px ;    
+           }
+           .image6{
+           height: 30px;
+           position: absolute;
+           top: 680px;
+           left:100px ;    
+           }
+           .image7{
+            height: 20px;
+           
+           position: absolute;
+           top: 570px;
+           right: 100px;
+             
+           }
+           .button2{
+    padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 30px;
+            padding-right: 30px;
+    
+}
+.button1{
+    padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 30px;
+            padding-right: 30px;
+           
+}  
+.footer-sec{
+    text-align: center; display: flex;
+    flex-direction: column;
+    margin-top: 320px;
+    margin-left: -60px;
+    height: fit-content;
+    
+
+}
+.footer2{
+    margin-top: 15px;
+}
+.footer3{
+    margin-top: 15px;
+}
+.footer4{
+    margin-top: 15px;
+}
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav-item">
+           <div class="menu-icon">
+            <img src="./menu-icon.png" alt="">
+           </div>
+           <div class="left-item">
+            <img src="./logo.png" alt="">
+            <h1>E GURU</h1>
+           </div>
+           <div class="middle-item">
+            <ul>
+                <li>Home</li>
+                <li>About  Us</li>
+                <li>Features</li>
+                <li> How It Works</li>
+            </ul>
+           </div>
+           <div class="right-item">
+            <button>Sign Up</button>
+        </div>
+           <div class="user-icon">
+            <img src="./user-profile.png" alt="">
+           </div>
+        </nav>
+
+
+        <div class="m-main-sec">
+            <div class="m-main-left">
+                <div class="m-left-head">
+                <h1>STUDY FROM </h1>
+                <h1>HOME WITH EXPERT</h1>
+
+                <p class="m-left-para">
+                    A learning system based on formalised 
+                <br>
+                teaching with the help of resources.</p>
+</div>
+<div class="m-main-button">
+                <button class="button1">Get Started</button>
+                <button class="button2">Learn More</button>
+            </div>
+</div>
+
+<div class="img-sec"> 
+    <div class="img-sec-item">
+    <img class="image1" src="./main-image-bg.png" alt="">
+    <img class="image2" src="./main-image-pattern.png" alt="">  
+    <img class="image3"   src="./main-image.png" alt="">
+ </div>
+    <img class="image4"  src="./orange-arrow.png" alt="">
+    <img class="image5"  src="./curve-arrow-removebg-preview.png" alt="">
+    <img class="image6"  src="./green-arrow.png" alt="">
+    <img class="image7"  src="./circle.png" alt="">
+
+</div>
+
+
+
+        </div>
+    </header>
+
+    <footer class="footer-sec">
+        <div class="footer1">
+            <h1 class="f-left-head">WHY WE ARE</h1>
+            <h1 class="f-left-head">THE BEST</h1>
+             <p> A learning system based on <br> formalised 
+            teaching with the help of ...</p>
+               
+        </div>
+        <div class="footer2">
+            <img src="./vector3.png" alt="">
+            <h1>EXPERT TEACHER</h1>
+            <p> A learning system based on formalised 
+                <br>teaching with the help of resources.</p>
+               
+        </div>
+        <div class="footer3">
+            <img src="./vector2.png" alt="">
+            <h1>ONLINE COURSES</h1>
+            <p>A learning system based on formalised 
+            <br> teaching with the help of resources.</p>
+                
+
+           
+        </div>
+        <div class="footer4">
+            <img src="./vector1.png" alt="">
+            <h1>24/7 SUPPORT</h1>
+            <p>A learning system based on formalised 
+            <br> teaching with the help of resources.</p>
+                
+           
+        </div>
+    </footer>
+</body>
+</html>
